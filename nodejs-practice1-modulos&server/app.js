@@ -1,65 +1,65 @@
-// // DATOS COMPLEJOS
-// function datosComplejos() {
+// DATOS COMPLEJOS
+function datosComplejos() {
 
-//     let lista = [ "uno", "dos", "tres" ];
+    let lista = [ "uno", "dos", "tres" ];
 
-//     let curso = {
-//         tema: "NodeJS",
-//         leccion: "datos compuestos"
-//     };
+    let curso = {
+        tema: "NodeJS",
+        leccion: "datos compuestos"
+    };
 
-//     console.log(curso.tema);
-// }
+    console.log(curso.tema);
+}
 
-// datosComplejos();
+datosComplejos();
 
 // ------------------------------------------------------------------------
 
-// // METODOS DE PSEUDO-CLASES
-// let calculo = {
+// METODOS DE PSEUDO-CLASES
+let calculo = {
     
-//     duplicar: function(valor1) { // funcion anonima
-//         return valor1 * 2;
-//     },
+    duplicar: function(valor1) { // funcion anonima
+        return valor1 * 2;
+    },
 
-//     dividir: function(valor1) {
-//         return valor1 / 2;
-//     }
-// }
+    dividir: function(valor1) {
+        return valor1 / 2;
+    }
+}
 
-// console.log( calculo.duplicar(10), calculo.dividir(10) );
-
-// ------------------------------------------------------------------------
-
-// // IMPORTAR MODULO EXTERNO
-// // "npm install moment" requerido
-// var moment = require('moment'); 
-// // importamos la libreria "moment"
-// // nos da acceso a todas las funciones y variables de la libreria "moment"
-// // require(<nombre de un modulo dentro de "node_modules">)
-
-// console.log( moment('1999-12-31').format('DD/MM/YY').toString() );
+console.log( calculo.duplicar(10), calculo.dividir(10) );
 
 // ------------------------------------------------------------------------
 
-// // IMPORTAR MODULO LOCAL/PROPIO
-// var miModulo = require('./miModulo');
-// // require busca en "node_modules" entonces tengo que especificarle la ruta de mi archivo
+// IMPORTAR MODULO EXTERNO
+// "npm install moment" requerido
+var moment = require('moment'); 
+// importamos la libreria "moment"
+// nos da acceso a todas las funciones y variables de la libreria "moment"
+// require(<nombre de un modulo dentro de "node_modules">)
 
-// miModulo.dividir(30);
+console.log( moment('1999-12-31').format('DD/MM/YY').toString() );
 
 // ------------------------------------------------------------------------
 
-// // MODULOS PRE-INSTALADOS
-// // algunos modulos importantes:
-// // http, url - archivos externos
-// // path, fs - archivos locales
+// IMPORTAR MODULO LOCAL/PROPIO
+var miModulo = require('./miModulo');
+// require busca en "node_modules" entonces tengo que especificarle la ruta de mi archivo
 
-// var util = require('util');
-// var http = require('http');
-// var prueba = "10";
+miModulo.dividir(30);
 
-// console.log( util.isNumber(prueba) ); // false
+// ------------------------------------------------------------------------
+
+// MODULOS PRE-INSTALADOS
+// algunos modulos importantes:
+// http, url - archivos externos
+// path, fs - archivos locales
+
+var util = require('util');
+var http = require('http');
+var prueba = "10";
+
+console.log( util.isNumber(prueba) ); // false
 
 // ------------------------------------------------------------------------
 
