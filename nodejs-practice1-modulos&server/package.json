@@ -1,0 +1,12 @@
+{
+  "name": "nodejs-test",
+  "version": "1.0.0",
+  "description": "LinkedIn Learning course project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "auditar": "npm audit && node app.js"
+  },
+  "author": "Martín De Lojo",
+  "license": "ISC"
+}
